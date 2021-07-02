@@ -1,0 +1,21 @@
+{
+  "name": "redis-socket",
+  "version": "1.0.0",
+  "description": "Chat con multinstancias, socketio, redis y angular",
+  "scripts": {
+    "front": "cd ./web-wasat && docker build -t wasaat .",
+    "back": "cd ./instance && docker build -t wsapp .",
+    "build": "npm run front && npm run back",
+    "up": "npm run build && cd ./instance && docker-compose up -d"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/CharlyEstudio/redis-socket-multinstancias.git"
+  },
+  "author": "CharlyEstudio",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/CharlyEstudio/redis-socket-multinstancias/issues"
+  },
+  "homepage": "https://github.com/CharlyEstudio/redis-socket-multinstancias#readme"
+}
